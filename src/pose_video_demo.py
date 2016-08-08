@@ -15,7 +15,7 @@ import csv
 import time, os, sys
 import argparse
 
-def posevideo(input_video_name, output_video_name=None, output_csv_name=None, isGPU=True, deviceId=0, bodyPt=[600, 400]):
+def posevideo(input_video_name, output_video_name=None, output_csv_name=None, isGPU=False, deviceId=0, bodyPt=[600, 400]):
  """ processing the video """
  # Find OpenCV version
  (major_ver, minor_ver, subminor_ver) = (cv2.__version__).split('.')
