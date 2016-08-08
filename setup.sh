@@ -10,4 +10,4 @@ SRC_URL='http://www.cs.berkeley.edu:/~pulkitag/ief/'
 #Download the models
 wget -c -l 0 ${SRC_URL}/models.tar && tar -xf models.tar && rm models.tar
 #Get pycaffe utils
-git clone https://github.com/pulkitag/pycaffe-utils.git src/pycaffe_utils
+git clone https://github.com/divamgupta/pycaffe-utils.git src/pycaffe_utils
