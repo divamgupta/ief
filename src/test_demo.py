@@ -27,7 +27,7 @@ LIST_SCALES = cfg.SCALE_LAMBDA
 
 ##
 #Scale Network
-def get_scale_net(isGPU=True, deviceId=0):
+def get_scale_net(isGPU=False, deviceId=0):
 	netName  = cfg.SCALE_MODEL.NET
 	defFile  = cfg.SCALE_MODEL.PROTO
 	net      = mp.MyNet(defFile, netName, isGPU = isGPU,  deviceId = deviceId)
@@ -37,7 +37,7 @@ def get_scale_net(isGPU=True, deviceId=0):
 
 ##
 #Pose Network
-def get_pose_net(isGPU=True, deviceId=0):
+def get_pose_net(isGPU=False, deviceId=0):
 	netName  = cfg.POSE_MODEL.NET
 	defFile  = cfg.POSE_MODEL.PROTO
 	metaFile = cfg.POSE_MODEL.META
